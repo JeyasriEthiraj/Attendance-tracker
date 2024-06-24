@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remote Learning Attendance Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#session-creation">Create Session</a></li>
+                <li><a href="#attendance-tracking">Track Attendance</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="session-creation">
+            <h2>Create Session</h2>
+            <form id="session-form">
+                <label for="session-name">Session Name:</label>
+                <input type="text" id="session-name" name="session-name"><br><br>
+                <label for="session-date">Session Date:</label>
+                <input type="date" id="session-date" name="session-date"><br><br>
+                <label for="session-time">Session Time:</label>
+                <input type="time" id="session-time" name="session-time"><br><br>
+                <button type="submit">Create Session</button>
+            </form>
+            <div id="session-list">
+                <!-- session list will be displayed here -->
+            </div>
+        </section>
+        <section id="attendance-tracking">
+            <h2>Track Attendance</h2>
+            <select id="session-select">
+                <!-- session options will be displayed here -->
+            </select>
+            <button id="track-attendance-btn">Track Attendance</button>
+            <div id="attendance-table">
+                <!-- attendance table will be displayed here -->
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
